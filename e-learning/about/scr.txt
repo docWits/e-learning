@@ -1,0 +1,4 @@
+1. Java 8 или новее.
+2. Любая IDE для работы с Java.
+3. Postgressql
+4. Maven 

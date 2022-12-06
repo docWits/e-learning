@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CE1EB82-FE3F-4B45-B662-BF3898E5B7B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>e_learning</RootNamespace>
+    <AssemblyName>e-learning</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.PowerPoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.PowerPoint.15.0.4420.1018\lib\net20\Microsoft.Office.Interop.PowerPoint.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTest.Designer.cs">
+      <DependentUpon>fTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecture.Designer.cs">
+      <DependentUpon>Lecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTest.resx">
+      <DependentUpon>fTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecture.resx">
+      <DependentUpon>Lecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="lecture\pp1.pptx" />
+    <None Include="lecture\pp11.pptx" />
+    <None Include="lecture\pp2.pptx" />
+    <None Include="lecture\pp3.pptx" />
+    <None Include="lecture\pp4.pptx" />
+    <None Include="lecture\pp5.pptx" />
+    <None Include="lecture\pp6.pptx" />
+    <None Include="lecture\pp8.pptx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\control1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\control2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\control3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\control4.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\control5.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec4.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec5.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec6.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec7.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec8.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec9.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec10.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lecture\lec11.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="about\author.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="about\lib.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="about\scr.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="about\summary.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="practice\practice1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="practice\practice2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="practice\practice3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="practice\practice4.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test\questions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test\answer.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test\answers.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

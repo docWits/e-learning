@@ -1,0 +1,8 @@
+Spring Boot задает способ простого создания приложений Spring и модель программирования, следующую рекомендуемым практикам приложений Spring.
+Для создания приложения Spring необходимы следующие компоненты.
+1. Утилита сборки/управления зависимостями, например, Maven или Gradle (Spring Boot также поддерживает Ant и Ivy).
+2. Корректное управление зависимостями и соответствующие плагины в утилите сборки. При работе с Maven требуется тег <parent/> (конечно, существуют и другие способы настройки Spring Boot, но использование тега <parent/> — простейший) и плагин spring-boot-maven-plugin. Если же вы используете Gradle, вам понадобятся плагины org.springframework, boot и io.spring.dependency-management.
+Нужно также добавить необходимые зависимости с помощью spring-bootstarters и создать основной класс приложения, включающий:
+1. аннотацию @SpringBootApplication;
+2. оператор SpringApplication.run в методе main.
+Существуют также IDE (интерактивные среды разработки), например STS (Spring Tool Suite — «комплекс инструментов для Spring», https://spring.io/tools), IntelliJ IDEA от JetBrains (https://www.jetbrains.com/idea/), NetBeans (https://netbeans.org), Atom от GitHub (https://atom.io) и VSCode компании Microsoft (https://code.visualstudio.com). У Atom и VSCode есть плагины для упрощения разработки приложений Spring.

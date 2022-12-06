@@ -1,0 +1,4 @@
+1. Добавляем CRUD RestControllers для всех сущностей + получение списков
+2. Добавить request & response Dto для каждой сущности в БД
+3. Подключить сваггер v3 (SpringDoc, OpenAPI)
+4. Добавить обработчики исключений (@ExceptionHandler, @ControllerAdvice)

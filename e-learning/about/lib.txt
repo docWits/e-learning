@@ -1,0 +1,11 @@
+Основная литература
+1. Spring REST. Building Java microservices and cloud applications. Balaji Varanasi, Maxim Bartkov. 
+2. Spring. Все паттерны проектирования. Динеш Раджпут. Питер. 2019.
+3. Java в облаке. Spring Boot. Spring Cloud. Cloud Foundry. Джон Лонг, Кеннет Бастани. 
+4. Spring Boot 2. Лучшие практики для профессионалов. Фелипе 	Гутьеррес. 
+5. Spring в действии. Крейг Уоллс
+
+Интернет источники
+1. https://www.baeldung.com
+2. https://spring.io/guides
+3. https://docs.spring.io/spring-boot/docs/current/reference/html/index.html

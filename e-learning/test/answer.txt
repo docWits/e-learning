@@ -1,0 +1,80 @@
+1;XML;0
+1;JavaConfig;0
+1;Аннотации;1
+1;JSON;0
+2;GenerationType.AUTOINCREMENT;0
+2;GenerationType.INDEX;0
+2;GenerationType.iDENTITY;0
+2;GenerationType.SEQUENCE;1
+3;validate;1
+3;Correct;0
+3;Pattern;0
+3;Validator;0
+4;Создается класс для конфигурации с аннотацией @Configuration;1
+4;Создается класс для конфигурации;0
+4;Создается класс для конфигурации с аннотацией @Bean;0
+4;Все параметры конфигурации указываются в ключах запуска приложения;0
+5;Factory Pattern;0
+5;Dependency Injection;1
+5;Service Locator;0
+5;Contextualized Lookup;0
+6;spring-boot-starter;0
+6;spring-boot-starter-parent;1
+6;spring-boot;0
+6;spring-boot-starter-web;0
+7;formCorrect();0
+7;isValid();0
+7;validate();1
+7;hasErrors();0
+8;Не один из других вариантов;0
+8;Один-ко-многим;1
+8;Один-к-одному;0
+8;Многие-ко-многим;0
+9;DEMAND;0
+9;EAGER;0
+9;LAZY;1
+9;One-to-Many;0
+10;JSA;0
+10;JEE;1
+10;JSP;0
+10;EJB;0
+11;ORM;0
+11;Entity;1
+11;Table;0
+11;Hibernate;0
+12;LAZY;0
+12;EAGER;1
+12;Default;0
+12;ALL;0
+13;Size;1
+13;Data;0
+13;Validate;0
+13;Length;0
+14;Session;0
+14;globalSession;0
+14;Singleton;1
+14;Context;0
+15;begin;0
+15;beginTransaction;0
+15;startTransaction;1
+15;getTransaction;0
+16;Context(“someBean”);1
+16;Component(“someBean”);0
+16;Component(name=”someBean”);0
+16;Bean(“someBean”);0
+17;JPA;0
+17;ORM;1
+17;JDBC;0
+17;DAO;0
+18;Поля, входящие в индекс;1
+18;Поля, значения которых собираются на основании данных в сущности;0
+18;Поля уникального идентификатора;0
+18;Поля, входящие в индекс Unique;0
+19;JpaData;0
+19;Jpa;0
+19;JpaRepository;1
+19;SpringDataJpa;0
+20;Один из способов конфигурирования приложений;0
+20;Основной интерфейс, представляющий информацию о конфигурации;0
+20;Набор параметров, указываемых в ключах при запуске приложения;0
+20;Специальный контейнер для реализации концепции инверсии управления и внедрения зависимостей, управляющий созданием, настройкой и сборкой бинов.;1
